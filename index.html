@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- no zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- tailwind -->
+    <link rel="stylesheet preload" href="./dist/output.css">
+
+    <!-- cdn font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+
+</head>
+
+<body class="bg-[#D9E0D9]">
+
+
+    <section class="pg-1-section w-full h-[100svh] bg-[#138546] bg-1 bg-cover bg-center bg-no-repeat">
+        <div class="pg-1-wrapper wrapper">
+
+            <!-- <div data-aos="fade-in" data-aos-delay="900" data-aos-duration="1000"
+                class="flex items-center justify-between w-full pt-6 prose-li:text-white prose-a:text-white">
+                <img src="./images/logo.svg" loading="eager" alt="" srcset="">
+
+                <ul class="flex items-center gap-x-4 prose-a:uppercase">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Roadmap</a></li>
+                    <li><a href="">How To Buy</a></li>
+                    <li><a href="">Tokenomics</a></li>
+                </ul>
+
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                    class="px-6 py-3 rounded-full ease-in duration-300 transition-all hover:ease-out hover:bg-transparent bg-[#07752E] border-[2px] border-black font-semibold">Get
+                    $HONK</a>
+            </div> -->
+
+            <nav class="left-0 right-0 z-20 w-full pt-4">
+                <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="900"
+                    class="bg-primary flex flex-wrap items-center justify-between">
+                    <a href="index.html" class="flex items-center gap-x-[6px]">
+                        <img src="./images/logo.svg" class="h-9 " alt="">
+                        <span
+                            class="self-center hidden text-lg text-black uppercase span-1 whitespace-nowrap md2:block"></span>
+                    </a>
+
+                    <div class="flex md:order-2">
+                        <button type="button"
+                            class="px-6 py-3 text-white rounded-full ease-in duration-300 transition-all hover:ease-out hover:bg-transparent bg-[#07752E] border-[2px] border-black font-semibold mr-1 md:mr-0">Get
+                            $HONK</button>
+
+                        <button data-collapse-toggle="navbar-sticky" type="button"
+                            class="inline-flex items-center py-1 px-2 text-sm border-2 rounded-full text-custom-2 md:hidden bg-custom-1 border-custom-1 hover:bg-secondary/80 focus:outline-none focus:ring-1 focus:ring-secondary-2"
+                            aria-controls="navbar-sticky" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="items-center prose-a:text-white prose-a:uppercase justify-between hidden w-full md:flex md:w-auto md:order-1 prose-a:text-sm"
+                        id="navbar-sticky">
+                        <ul
+                            class="flex flex-col p-4 mt-4 font-medium border border-gray-700 rounded-lg md:p-0 md:flex-row md:gap-x-8 md:mt-0 md:border-0 gap-y-1 prose-a:text-xs prose-a:text-custom-1">
+                            <li class="">
+                                <a href="#home" onclick="lenis.scrollTo('#home')"
+                                    class=" block  rounded-[3px]  text-custom-2 md:hover:text-font2 ease-in group-hover:ease-out duration-300 md:p-0 bg-secondary p-1 text-xs md:bg-transparent  border-gray-700">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about" onclick="lenis.scrollTo('#about')"
+                                    class="block  rounded-[3px]  text-custom-1 md:hover:text-font2 ease-in group-hover:ease-out duration-300 md:p-0 hover:text-custom-1/50 border-gray-700 hover:bg-secondary  md:bg-transparent active:bg-transparent p-1 hover:text-custom-2 active:text-custom-2">About</a>
+                            </li>
+                            <li>
+                                <a href="#roadmap" onclick="lenis.scrollTo('#roadmap')"
+                                    class="block   rounded-[3px]  text-custom-1 md:hover:text-font2 ease-in group-hover:ease-out duration-300 md:p-0 hover:text-custom-1/50 border-gray-700 hover:bg-secondary  md:bg-transparent active:bg-transparent p-1 hover:text-custom-2 active:text-custom-2">Roadmap</a>
+                            </li>
+                            <li>
+                                <a href="#roadmap" onclick="lenis.scrollTo('#roadmap')"
+                                    class="block   rounded-[3px]  text-custom-1 md:hover:text-font2 ease-in group-hover:ease-out duration-300 md:p-0 hover:text-custom-1/50 border-gray-700 hover:bg-secondary  md:bg-transparent active:bg-transparent p-1 hover:text-custom-2 active:text-custom-2">How
+                                    To Buy</a>
+                            </li>
+
+                            <li>
+                                <a href="#roadmap" onclick="lenis.scrollTo('#roadmap')"
+                                    class="block   rounded-[3px]  text-custom-1 md:hover:text-font2 ease-in group-hover:ease-out duration-300 md:p-0 hover:text-custom-1/50 border-gray-700 hover:bg-secondary  md:bg-transparent active:bg-transparent p-1 hover:text-custom-2 active:text-custom-2">Tokenomics</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="gird-8">
+                <div class="k-1"></div>
+                <div class="k-2"></div>
+                <div class="k-3"></div>
+            </div>
+
+
+            <div class="flex h-full w-full justify-center flex-col items-center prose-headings:text-[#E1E6E1]">
+
+                <h1 class="text-[25vw]" data-aos="fade-in" data-aos-delay="0" data-aos-duration="1000">
+                    HONK
+                </h1>
+
+                <img data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" src="./images/image-holder.svg"
+                    class="absolute w-[35rem] h-auto bottom-0 z-50" alt="" srcset="">
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="pg-2-section bg-[#D9E0D9] border-t-2 border-black/80">
+        <div class="pg-2-wrapper wrapper py-[10rem]">
+            <h2 class="w-full xl:w-[80%] ">
+                The most memeable memecoin in existence. The dogs have had their day. it’s time for $HONK to take reign.
+            </h2>
+            <div class="card mt-[5rem]  card-1">
+                <div
+                    class="card-wrapper gap-x-[10rem] shadow-test flex bg-[#FFFFFF] rounded-xl border-2 border-black p-[5rem] items-start bg-2 bg-cover bg-center">
+                    <div class="flex ">
+                        <ul class="flex flex-col gap-x-4 gap-y-4">
+
+                            <div class="flex wrap gap-x-4 gap-y-4">
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"
+                                        class="swaps-2 swaps-a"><img src="./images/telegram.svg" alt="" srcset=""></a>
+                                </li>
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"
+                                        class="swaps-2 swaps-a"><img src="./images/twitter.svg" alt="" srcset=""></a>
+                                </li>
+                            </div>
+                            <div class="flex wrap gap-x-4 gap-y-4">
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"
+                                        class="swaps-2 swaps-a"><img src="./images/medium.svg" alt="" srcset=""></a>
+                                </li>
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"
+                                        class="swaps-2 swaps-a"><img src="./images/dex.svg" alt="" srcset=""></a></li>
+                            </div>
+
+                        </ul>
+                    </div>
+
+                    <div class="flex">
+                        <ul class="flex flex-wrap gap-x-5 gap-y-4">
+
+                            <div class="flex flex-wrap wrap gap-x-5 gap-y-4">
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"
+                                        class="swaps swaps-a"><img src="./images/uniswap.svg" alt=""
+                                            srcset="">Uniswap</a></li>
+
+                                <li><a href="http://" target="_blank" rel="noopener noreferrer"
+                                        class="swaps swaps-a"><img src="./images/sushiswap.svg" alt=""
+                                            srcset="">Sushiwap</a></li>
+
+                                <li class=""><a href="http://" target="_blank" rel="noopener noreferrer"
+                                        class="pointer-events-none swaps bg-black/10"><img src="./images/binance.svg"
+                                            alt="" srcset="">Binance</a>
+                                <li class=""><a href="http://" target="_blank" rel="noopener noreferrer"
+                                        class="pointer-events-none swaps bg-black/10"><img src="./images/bybit.svg"
+                                            alt="" srcset="">Bybit</a>
+                                </li>
+                                </li>
+                            </div>
+
+                            <div class="flex flex-wrap wrap gap-x-5 gap-y-4">
+                                <li class=""><a href="http://" target="_blank" rel="noopener noreferrer"
+                                        class="pointer-events-none swaps bg-black/10"><img src="./images/kucoin.svg"
+                                            alt="" srcset="">Kucoin</a>
+                                </li>
+                                <li class=""><a href="http://" target="_blank" rel="noopener noreferrer"
+                                        class="pointer-events-none swaps bg-black/10"><img src="./images/crypto.svg"
+                                            alt="" srcset="">Crypto.com</a></li>
+                                <li class=""><a href="http://" target="_blank" rel="noopener noreferrer"
+                                        class="pointer-events-none swaps bg-black/10"><img src="./images/houbie.svg"
+                                            alt="" srcset="">Houbie</a>
+                                </li>
+                                <li class=""><a href="http://" target="_blank" rel="noopener noreferrer"
+                                        class="pointer-events-none swaps bg-black/10"><img src="./images/okex.svg"
+                                            alt="" srcset="">Okex</a>
+                                </li>
+                            </div>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="pg-3 bg-[#07752E] border-t-2 border-black">
+        <div class="pg-3-wrapper wrapper pt-[10rem] ">
+            <div class="flex items-center grid-2">
+                <div class="flex flex-col prose-p:text-xl g2-g1 prose-headings:text-white prose-p:text-white">
+                    <h1 class="mb-8 font-bold  text-4xl md:text-6xl">
+                        About Us
+                    </h1>
+                    <div class="wrap pl-[10rem] ">
+                        <p class="mb-4">Clown Pepe - HONK is not your average crypto project. We're the whimsical intersection of memes and money, bringing laughter and prosperity to the blockchain. Our mission? To spread joy, silliness, and financial freedom to all who dare to embrace the clown within.
+
+                            
+                        </p>
+                        <p class="mb-2">Why Clown Pepe - HONK?:
+                            We believe in the power of laughter and community. With Clown Pepe - HONK, we're creating a vibrant ecosystem where every member is a cherished part of our circus family. Whether you're a seasoned clown or a crypto newbie, there's a place for you under our big top.</p>
+                     
+                    </div>
+
+                </div>
+
+                <div class="flex g2-g2">
+                    <img src="./images/g1.png" alt="">
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="pg-4 bg-[#D9E0D9]  bg-3 bg-contain bg-top bg-repeat-x ">
+        <div class="pg-4-wrapper wrapper pt-[10rem] s:pt-[15rem] md:pt-25rem] lg:pt-[27rem] pb-[10rem]">
+            <div class="mb-12 text-center wrap">
+                <h1 class="mb-4 font-bold  text-4xl md:text-6xl">How To Buy</h1>
+            </div>
+
+            <div
+                class="flex flex-col max-w-5xl mx-auto card-wrapper gap-x-4 gap-y-4 prose-p:text-sm s:prose-p:text-sm sm:prose-p:text-base sm:prose-headings:text-4xl prose-headings:text-3xl">
+                <div class="card how-card">
+                    <div class="g3-g1"><img src="./images/wallet.png" class="w-[68px] h-auto" alt="" srcset="">
+                    </div>
+                    <div class="flex flex-col g3-g2 gap-y-2">
+                        <h3>Create Wallet</h3>
+                        <p>Download metamask or your wallet of choice from the app store or google play store for
+                            free. Desktop users, download the google chrome extension by going to metamask.io</p>
+                    </div>
+                </div>
+                <div class="card how-card">
+                    <div class="g3-g1"><img src="./images/eth.png" class="w-[68px] h-auto" alt="" srcset=""></div>
+                    <div class="flex flex-col g3-g2 gap-y-2">
+                        <h3>Get some ETH</h3>
+                        <p>Have ETH in your wallet to switch to $HONK If you don't have any ETH. you can buy
+                            directly
+                            on metamask, transfer from another wallet, or buy on another exchange and send it to
+                            your
+                            wallet-</p>
+                    </div>
+                </div>
+                <div class="card how-card">
+                    <div class="g3-g1"><img src="./images/uniswap.png" class="w-[68px] h-auto" alt="" srcset="">
+                    </div>
+                    <div class="flex flex-col g3-g2 gap-y-2">
+                        <h3>Got to Uniswap</h3>
+                        <p>Connect to Uniswap. Go to uniswap in google chrome or on the browser inside
+                            your
+                            Metamask app. Connect your wallet. Paste the $HONK token address into Uniswap, select
+                            Pepe,
+                            and confirm. When Metamask prompts you for a wallet signature, Sign,</p>
+                    </div>
+                </div>
+                <div class="card how-card">
+                    <div class="g3-g1"><img src="./images/swap.png" class="w-[68px] h-auto" alt="" srcset=""></div>
+                    <div class="flex flex-col g3-g2 gap-y-2">
+                        <h3>Switch ETH for $HONK</h3>
+                        <p>Switch ETH for $HONK. We have ZERO taxes so you don't need to worry about buying with o
+                            specific slippage, although you may need to use slippage during times of market
+                            volatility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+
+    <div
+        class="pg-4 bg-[#07752E] border-y-2 border-black prose-headings:text-white prose-p:text-white bg-4 bg-cover bg-center bg-no-repeat">
+        <div class="pg-4-wrapper wrapper py-[15rem]">
+            <div class="tokenomics-grid">
+                <div class="g4-g1">
+                    <h1 class="mb-4 font-bold text-4xl md:text-6xl">Tokenomics</h1>
+                    <p class="py-4 border-t-[1px] border-white">$HONK offers 0% tax for buy and sell</p>
+                    <p class="py-4  border-t-[1px] border-white">Token Supply:
+                        100, 000, 000, 000
+                    </p>
+                    <p class="w-full md:w-60%  pt-8 border-t-[1px] border-white">With Clown Pepe - HONK, we're flipping the script on traditional tokenomics, making it easy and delightful for our community to engage and thrive. Come honk with us and experience the joy of decentralized finance like never before! </p>
+                </div>
+                <div class="g4-g2"><img src="./images/tokenomics.svg" class=" w-[30rem] h-auto" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <section id="roadmap" class="bg-[#D9E0D9] prose-headings:text-[#07752E] ">
+        <div class="pg-3 pt-[15rem]">
+            <div class="wrapper">
+                <div class="flex flex-col">
+                    <div
+                        class="flex flex-col items-center justify-between w-full roadmap lg:flex-row gap-y-4 prose-p:text-sm  mb-[3rem]">
+                        <h1 class="font-bold h1 h1-main  text-4xl md:text-6xl" data-aos="fade-up" data-aos-delay="100"
+                            data-aos-duration="900">
+                            Roadmap</h1>
+                        <div class="w-full lg:w-[40%] ">
+                            <p class="text-center text-2xl lg:text-start text-[#07752E] p1-main not-prose"
+                                data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
+                                All jokes aside, here is a rough sketch of $HONK path ahead.
+                                We dont won't to give everything away on day 1. Expect
+                                surprises along the woy.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col w-full border-2 rounded-lg card lg:flex-row border-[#07752E]/30 prose-p:text-xs  prose-p:text-white"
+                        data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
+
+                        <div class="flex flex-col p-4 box gap-y-6 s:p-8 sm:p-12 grow" data-aos="fade-up"
+                            data-aos-delay="400" data-aos-duration="900">
+                            <div class="flex flex-col gap-y-2">
+                                <small class="text-[#07752E] /50 phases">Phase 1</small>
+                                <h3 class="roadmap-headlines">Launch</h3>
+                            </div>
+
+                            <div class="flex flex-col item gap-y-4">
+                                <div
+                                    class="items-1 flex items-center gap-x-2 bg-[#07752E]  rounded-[4px] text-secondary px-4 py-2">
+                                    <img src="images/check.png" alt="">
+                                    <p>Launching Time</p>
+                                </div>
+                                <div
+                                    class="items-1 flex items-center gap-x-2 bg-[#07752E]  rounded-[4px] text-secondary px-4 py-2">
+                                    <img src="images/check.png" alt="">
+                                    <p>Social Launch</p>
+                                </div>
+                                <div
+                                    class="items-1 flex items-center gap-x-2 bg-[#07752E]  rounded-[4px] text-secondary px-4 py-2">
+                                    <img src="images/none-check.png" alt="">
+                                    <p>V1 Website Launch</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="900"
+                            class="flex flex-col p-4 box gap-y-6 border-y-2 lg:border-y-0 lg:border-x-2 border-[#07752E] /30 s:p-8 sm:p-12 grow">
+                            <div class="flex flex-col gap-y-2">
+                                <small class="text-[#07752E] /50 phases">Phase 2</small>
+                                <h3 class="roadmap-headlines">Investment
+                                </h3>
+                            </div>
+
+                            <div class="flex flex-col item gap-y-4">
+                                <div
+                                    class="items-1 flex items-center gap-x-2 bg-[#07752E]  rounded-[4px] text-secondary px-4 py-2">
+                                    <img src="images/none-check.png" alt="">
+                                    <p>Giveways & Promos
+                                    </p>
+                                </div>
+                                <div
+                                    class="items-1 flex items-center gap-x-2 bg-[#07752E]  rounded-[4px] text-secondary px-4 py-2">
+                                    <img src="images/none-check.png" alt="">
+                                    <p>Publish Whitepaper
+                                    </p>
+                                </div>
+                                <div
+                                    class="items-1 flex items-center gap-x-2 bg-[#07752E]  rounded-[4px] text-secondary px-4 py-2">
+                                    <img src="images/none-check.png" alt="">
+                                    <p>Mega Advertisement
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col p-4 box gap-y-6 s:p-8 sm:p-12 grow" data-aos="fade-up"
+                            data-aos-delay="600" data-aos-duration="900">
+                            <div class="flex flex-col gap-y-2">
+                                <small class="text-[#07752E] /50 phases">Phase 3</small>
+                                <h3 class="roadmap-headlines">Growing
+                                </h3>
+                            </div>
+
+                            <div class="flex flex-col item gap-y-4">
+                                <div
+                                    class="items-1 flex items-center gap-x-2 bg-[#07752E]  rounded-[4px] text-secondary px-4 py-2">
+                                    <img src="images/none-check.png" alt="">
+                                    <p>CEX Listings
+                                    </p>
+                                </div>
+                                <div
+                                    class="items-1 flex items-center gap-x-2 bg-[#07752E]  rounded-[4px] text-secondary px-4 py-2">
+                                    <img src="images/none-check.png" alt="">
+                                    <p>Influencer Marketing
+                                    </p>
+                                </div>
+                                <div
+                                    class="items-1 flex items-center gap-x-2 bg-[#07752E]  rounded-[4px] text-secondary px-4 py-2">
+                                    <img src="images/none-check.png" alt="">
+                                    <p>dApp release
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-wrap flex w-full items-start mt-[2rem] relative z-10" data-aos="fade-right"
+                        data-aos-delay="300" data-aos-duration="900">
+                        <img src="./images/image-holder-2.png" loading="lazy" fetchpriority="low"
+                            class="h-auto w-[20rem]" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer
+        class=" bg-[#07752E] border-t-2 border-black prose-headings:text-white prose-a:text-white prose-p:text-white">
+        <div class="mx-auto w-full wrapper footer-py pt-[5rem] pb-[1rem] prose-headings:text-sm">
+
+            <div class="md:flex gap-y-[5rem] md:gap-y-0 md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="flex items-center footer-logo">
+                        <img src="./images/logo.svg" class="h-8 mr-[6px] rounded-lg" alt="#" />
+                        <!-- <span
+                            class="self-center text-base font-semibold span-1 md:text-lg whitespace-nowrap text-font3">TOKEN</span> -->
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 prose-a:text-xs">
+                    <div>
+                        <h1 class="mb-6 text-lg font-semibold uppercase text-font3">SITEMAP
+                        </h1>
+                        <ul class="flex flex-col gap-2">
+                            <li class="">
+                                <a href="#home" onclick="lenis.scrollTo('#home')" class="hover:underline">Home</a>
+                            </li>
+                            <li class="">
+                                <a href="#about" onclick="lenis.scrollTo('#about')" class="hover:underline">About</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="mb-6 text-lg font-semibold uppercase text-font3">Follow us
+                        </h1>
+                        <ul class="flex flex-col gap-2">
+                            <li class="">
+                                <a href="
+                               " target="_blank" class="hover:underline ">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" class="hover:underline">Telegram</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h1 class="mb-6 text-lg font-semibold uppercase text-font3 ">Legal</h1>
+                        <ul class="flex flex-col gap-2">
+                            <li class="">
+                                <a href="#" class="hover:underline">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Terms &amp;
+                                    Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <hr class="my-6 border-white/50 sm:mx-auto lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <p class="text-xs text-font3 sm:text-center">© 2023 <a href="#" class="hover:underline">TOKEN
+
+                        Token</a>. All Rights Reserved.
+                </p>
+
+                <div class="flex mt-4 gap-[10px] sm:justify-center sm:mt-0">
+                    <a href="
+                    https://twitter.com/chedda_20" class="text-font3 hover:text-gray-900" target="_blank">
+                        <img src="./images/twitter.png" alt="">
+                    </a>
+                    <a href="https://t.me/chedda2" class="text-font3 hover:text-gray-900" target="_blank">
+                        <img src="./images/telegram.png" alt="">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- lenis -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script>const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+            console.log(e)
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)</script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+
+</body>
+
+</html>
